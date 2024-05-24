@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<!--Поле результата-->
+    <TextView
+        android:id="@+id/out"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/proba"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--Поле знака операции-->
+    <TextView
+        android:id="@+id/operationSymbol"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/proba"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--Поле ввода чисел-->
+    <TextView
+        android:id="@+id/numbers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/proba"
+        android:inputType="phone"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextViewEdits" />
+    <!--Первая строка с числами-->
+    <LinearLayout
+        android:id="@+id/firstLine"
+        android:layout_width="240dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="642dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <!--Кнопка ноль-->
+        <Button
+            android:id="@+id/zero"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:text="@string/zero"
+            android:textSize="23sp"
+            app:cornerRadius="0dp" />
+    </LinearLayout>
+    <!--Вторая строка с числами-->
+    <LinearLayout
+        android:id="@+id/secondLine"
+        android:layout_width="240dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="550dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <!--Кнопка один-->
+        <Button
+            android:id="@+id/one"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:text="@string/one"
+            android:textSize="23sp"
+            app:cornerRadius="0dp" />
+        <!--Кнопка два-->
+        <Button
+            android:id="@+id/two"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:text="@string/two"
+            android:textSize="23sp"
+            app:cornerRadius="0dp" />
+        <!--Кнопка три-->
+        <Button
+            android:id="@+id/three"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:text="@string/three"
+            android:textSize="23sp"
+            app:cornerRadius="0dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
