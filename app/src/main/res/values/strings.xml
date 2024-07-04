@@ -23,4 +23,6 @@
     <string name="equals">=</string>
     <string name="coma">,</string>
     <string name="sign">+/-</string>
+    <string name="clear">C</string>
+    <string name="back">←</string>
 </resources>

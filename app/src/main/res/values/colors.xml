@@ -2,4 +2,6 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="azure">#0080FE</color>
+    <color name="sky">#95C8D8</color>
 </resources>

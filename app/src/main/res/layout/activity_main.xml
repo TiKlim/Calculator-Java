@@ -7,47 +7,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-<!--Поле результата-->
-    <TextView
-        android:id="@+id/out"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="440dp"
-        android:text="@string/proba"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <!--Поле знака операции-->
-    <TextView
-        android:id="@+id/operationSymbol"
-        android:layout_width="385dp"
-        android:layout_height="73dp"
-        android:layout_marginBottom="690dp"
-        android:text="@string/proba"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
     <!--Поле ввода чисел-->
     <TextView
-        android:id="@+id/numbers"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="580dp"
-        android:inputType="phone"
+        android:id="@+id/out"
+        android:layout_width="385dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="690dp"
         android:text="@string/proba"
-        android:textSize="55sp"
+        android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TextViewEdits" />
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/in"
+        android:layout_width="354dp"
+        android:layout_height="69dp"
+        android:backgroundTint="@color/azure"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="500dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="0"
+        android:textAlignment="viewEnd"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.197" />
+
     <!--Первая строка с кнопками-->
     <LinearLayout
         android:id="@+id/firstLine"
@@ -55,7 +51,8 @@
         android:layout_height="100dp"
         android:layout_marginTop="662dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/white">
         <!--Кнопка выбора знака-->
         <Button
             android:id="@+id/sign"
@@ -64,7 +61,9 @@
             android:layout_weight="1"
             android:text="@string/sign"
             android:textSize="23sp"
-            app:cornerRadius="0dp" />
+            app:cornerRadius="0dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/sky"/>
         <!--Кнопка ноль-->
         <Button
             android:id="@+id/zero"
@@ -73,7 +72,8 @@
             android:layout_weight="1"
             android:text="@string/zero"
             android:textSize="23sp"
-            app:cornerRadius="0dp" />
+            app:cornerRadius="0dp"
+            android:backgroundTint="@color/black"/>
         <!--Кнопка дробного числа-->
         <Button
             android:id="@+id/coma"
@@ -82,7 +82,9 @@
             android:layout_weight="1"
             android:text="@string/coma"
             android:textSize="23sp"
-            app:cornerRadius="0dp" />
+            app:cornerRadius="0dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/sky"/>
     </LinearLayout>
     <!--Вторая строка с числами-->
     <LinearLayout
@@ -100,7 +102,8 @@
             android:layout_weight="1"
             android:text="@string/one"
             android:textSize="23sp"
-            app:cornerRadius="0dp" />
+            app:cornerRadius="0dp"
+            android:backgroundTint="@color/black"/>
         <!--Кнопка два-->
         <Button
             android:id="@+id/two"
@@ -109,7 +112,8 @@
             android:layout_weight="1"
             android:text="@string/two"
             android:textSize="23sp"
-            app:cornerRadius="0dp" />
+            app:cornerRadius="0dp"
+            android:backgroundTint="@color/black"/>
         <!--Кнопка три-->
         <Button
             android:id="@+id/three"
@@ -118,7 +122,8 @@
             android:layout_weight="1"
             android:text="@string/three"
             android:textSize="23sp"
-            app:cornerRadius="0dp" />
+            app:cornerRadius="0dp"
+            android:backgroundTint="@color/black"/>
     </LinearLayout>
     <!--Третья строка с числами-->
     <LinearLayout
@@ -136,7 +141,8 @@
             android:layout_weight="1"
             android:text="@string/four"
             android:textSize="23sp"
-            app:cornerRadius="0dp" />
+            app:cornerRadius="0dp"
+            android:backgroundTint="@color/black"/>
         <!--Кнопка пять-->
         <Button
             android:id="@+id/five"
@@ -145,7 +151,8 @@
             android:layout_weight="1"
             android:text="@string/five"
             android:textSize="23sp"
-            app:cornerRadius="0dp" />
+            app:cornerRadius="0dp"
+            android:backgroundTint="@color/black"/>
         <!--Кнопка шесть-->
         <Button
             android:id="@+id/six"
@@ -154,7 +161,8 @@
             android:layout_weight="1"
             android:text="@string/six"
             android:textSize="23sp"
-            app:cornerRadius="0dp" />
+            app:cornerRadius="0dp"
+            android:backgroundTint="@color/black"/>
     </LinearLayout>
     <!--Четвёртая строка с числами-->
     <LinearLayout
@@ -166,31 +174,34 @@
         app:layout_constraintTop_toTopOf="parent">
         <!--Кнопка семь-->
         <Button
-            android:id="@+id/seventh"
+            android:id="@+id/seven"
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_weight="1"
             android:text="@string/seven"
             android:textSize="23sp"
-            app:cornerRadius="0dp" />
+            app:cornerRadius="0dp"
+            android:backgroundTint="@color/black"/>
         <!--Кнопка восемь-->
         <Button
-            android:id="@+id/eighth"
+            android:id="@+id/eight"
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_weight="1"
             android:text="@string/eight"
             android:textSize="23sp"
-            app:cornerRadius="0dp" />
+            app:cornerRadius="0dp"
+            android:backgroundTint="@color/black"/>
         <!--Кнопка девять-->
         <Button
-            android:id="@+id/ninth"
+            android:id="@+id/nine"
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_weight="1"
             android:text="@string/nine"
             android:textSize="23sp"
-            app:cornerRadius="0dp" />
+            app:cornerRadius="0dp"
+            android:backgroundTint="@color/black"/>
     </LinearLayout>
     <!--Пятая строка с кнопками-->
     <LinearLayout
@@ -208,7 +219,9 @@
             android:layout_weight="1"
             android:text="@string/percentage"
             android:textSize="23sp"
-            app:cornerRadius="0dp" />
+            app:cornerRadius="0dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/sky"/>
         <!--Кнопка вычитания-->
         <Button
             android:id="@+id/root"
@@ -217,7 +230,9 @@
             android:layout_weight="1"
             android:text="@string/root"
             android:textSize="23sp"
-            app:cornerRadius="0dp" />
+            app:cornerRadius="0dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/sky"/>
         <!--Кнопка умножения-->
         <Button
             android:id="@+id/multiplication"
@@ -226,7 +241,9 @@
             android:layout_weight="1"
             android:text="@string/multiplication"
             android:textSize="23sp"
-            app:cornerRadius="0dp" />
+            app:cornerRadius="0dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/sky"/>
         <!--Кнопка деления-->
         <Button
             android:id="@+id/division"
@@ -235,7 +252,9 @@
             android:layout_weight="1"
             android:text="@string/division"
             android:textSize="23sp"
-            app:cornerRadius="0dp" />
+            app:cornerRadius="0dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/sky"/>
     </LinearLayout>
     <!--Шестая строка с кнопками-->
     <LinearLayout
@@ -253,7 +272,9 @@
             android:layout_weight="1"
             android:text="@string/fraction"
             android:textSize="21sp"
-            app:cornerRadius="0dp" />
+            app:cornerRadius="0dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/sky"/>
         <!--Кнопка икс в степени-->
         <Button
             android:id="@+id/degree"
@@ -262,7 +283,9 @@
             android:layout_weight="1"
             android:text="@string/degree"
             android:textSize="20sp"
-            app:cornerRadius="0dp" />
+            app:cornerRadius="0dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/sky"/>
         <!--Кнопка сложения-->
         <Button
             android:id="@+id/addition"
@@ -271,7 +294,9 @@
             android:layout_weight="1"
             android:text="@string/plus"
             android:textSize="23sp"
-            app:cornerRadius="0dp" />
+            app:cornerRadius="0dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/sky"/>
         <!--Кнопка вычитания-->
         <Button
             android:id="@+id/minus"
@@ -280,7 +305,43 @@
             android:layout_weight="1"
             android:text="@string/minus"
             android:textSize="23sp"
-            app:cornerRadius="0dp" />
+            app:cornerRadius="0dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/sky"/>
+    </LinearLayout>
+
+    <!--Седьмая строка с кнопками-->
+    <LinearLayout
+        android:id="@+id/sevenLine"
+        android:layout_width="320dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="117dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <!--Кнопка сброса-->
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:text="@string/clear"
+            android:textSize="21sp"
+            app:cornerRadius="0dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/sky"/>
+        <!--Кнопка убирающая с конца один символ-->
+        <Button
+            android:id="@+id/back"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:text="@string/back"
+            android:textSize="20sp"
+            app:cornerRadius="0dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/sky"
+            android:textStyle="bold"/>
+
     </LinearLayout>
 
     <RelativeLayout
@@ -297,6 +358,7 @@
             android:layout_height="376dp"
             android:text="@string/equals"
             android:textSize="27sp"
-            app:cornerRadius="0dp" />
+            app:cornerRadius="0dp"
+            android:backgroundTint="@color/azure"/>
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
